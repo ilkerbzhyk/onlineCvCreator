@@ -1,0 +1,44 @@
+#up{
+
+  background-image:url('image/ekran.jpg');
+
+}
+#middle{
+  background-image:url('image/tumblr-arkaplan.jpg');
+
+}
+#footer{
+  background-image:url('image/tumblr-arkaplan.jpg');
+}
+
+
+#cssmenu {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+#cssmenu {
+  width: 193px;
+
+}
+#cssmenu ul {
+  list-style: none;
+  text-indent: 0px;
+
+}
+#cssmenu li {
+  margin-top: 3px;
+
+}
+#cssmenu a {
+  font: 12px Verdana;
+  padding: 4px;
+  color: #646464;
+  display: block;
+  padding: 6px 30px;
+  height: 20px;
+  text-decoration: none;
+  background: url('image/background.gif') no-repeat;
+  
+}
+

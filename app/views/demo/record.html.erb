@@ -35,32 +35,34 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <%=form_for(:record, :url => {:action => 'create'}) do |f|  %> 
                                 <h1> ÜYE OL </h1>
                                 
                                  <p> 
                                     <label for="usernamesignup" class="uname" >Ad:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                    <%= f.text_field(:isim) %>
+                                    
+                                   
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Soyad:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="XXXXXXXXXXX" />
+                                     <%= f.text_field(:soyisim) %>
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Meslek:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                    <%= f.text_field(:meslek) %>
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Doğum Tarihi:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                    <%= f.text_field(:dogumTarihi) %>
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Doğum Yeri:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                    <%= f.text_field(:dogumYeri) %>
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Uyruk:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                   <%= f.text_field(:uyruk) %>
                                 </p>
                                 <p> 
                                     <label >Medeni Hal:</label><br><br>
@@ -70,32 +72,32 @@
                                 </p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Telefon:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  placeholder="+90 505 646 5274"  />
+                                    <%= f.text_field(:telefon) %>
                                 </p>
                                   <p> 
                                     <label for="usernamesignup" class="uname" >Adres:</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+                                   <%= f.text_field(:adres) %>
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail"  >Email:</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="benimMailim@mail.com"/> 
+                                   <%= f.text_field(:email) %>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" >Şifre: </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="ör. X8df!90EO"/>
+                                   <%= f.text_field(:sifre) %>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" >Lütfen Şifrenizi Tekrarlayın: </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="ör. X8df!90EO"/>
+                                  <%= f.text_field(:sifre) %>
                                 </p>
                                 <p class="signin button"> 
-                                    <input type="submit" value="Üye Ol"/> 
+                                    <%= submit_tag("Giriş") %> 
                                 </p>
                                 <p class="change_link">  
                                     Zaten üye misin ?
                                     <a href="#toregister" class="to_login"> Git ve giriş yap </a>
                                 </p>
-                            </form>
+                                <% end %>
                         </div>
 
                          <div id="register" class="animate form">

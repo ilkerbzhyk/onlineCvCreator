@@ -1,4 +1,9 @@
 OnlineCvCreator::Application.routes.draw do
+  get "ilgi_alanlaris/index"
+  get "ilgi_alanlaris/show"
+  get "ilgi_alanlaris/new"
+  get "ilgi_alanlaris/edit"
+  get "ilgi_alanlaris/delete"
   # get "demo/mainPage"
   #root route
   root "demo#mainPage"

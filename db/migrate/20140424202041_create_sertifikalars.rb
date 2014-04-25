@@ -4,7 +4,7 @@ class CreateSertifikalars < ActiveRecord::Migration
 
     	t.string "eMail"
     	t.string "aciklama"
-        t.timestamps
+      t.timestamps
 
     end
     add_index("sertifikalars","eMail")

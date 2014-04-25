@@ -8,7 +8,7 @@ class CreateEgitims < ActiveRecord::Migration
     	t.string "baslangicTarihi"
     	t.string "bitisTarihi"
     	t.string "aciklama"
-        t.timestamps
+      t.timestamps
     end
     add_index("egitims","eMail")
   end

@@ -8,10 +8,17 @@ class DemoController < ApplicationController
   end
 
   def record
-
+    @record = UyelerTablosu.new
   end
   
-   def egitim
+  #recordla ilgli create hepsinde de kullanilabilir
+  def create
+    @record = UyelerTablosu.new(params.require(:subject).permit(:isim,:soyisim))
+    if @record.save
+        redircet_to(:action => 'record')
+  end  
+
+  def egitim
 
   end
 
@@ -31,7 +38,7 @@ class DemoController < ApplicationController
 
   end
 
-  def tecrübeler
+  def tecrubeler
 
   end  
 
